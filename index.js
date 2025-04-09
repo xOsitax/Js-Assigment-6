@@ -26,9 +26,9 @@ function markAsRead(title) {
   const book = library.find((book) => book.title === title);
   if (book) {
     book.isRead = true;
-    alert('Marked "${title}" as read.');
+    alert(`Marked ${title} as read.`);
   } else {
-    alert('Book "${title}" not found ');
+    alert(`Book ${title} not found `);
   }
 }
 // Main menu loop
